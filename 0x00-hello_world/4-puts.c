@@ -1,13 +1,12 @@
-#!/bin/bash
 #include <stdio.h>
 /**
-* main -Entry point
+* main - Entry point
 *
 * Return: Always 0 (Success)
 */
 int main(void)
 {
-	char str1[51]
+	char str1[51];
 	strcpy(str1, "Programming is like building a multilingual puzzle");
 	puts(str1);
 	return (0);
