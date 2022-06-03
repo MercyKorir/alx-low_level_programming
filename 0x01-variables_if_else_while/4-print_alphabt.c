@@ -14,7 +14,7 @@ int main(void)
 	{
 		int lower_x = tolower(x);
 
-		if ( x == 'E')
+		if (x == 'E')
 		{
 
 		} else if (x == 'Q')
