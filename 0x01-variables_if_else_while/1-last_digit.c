@@ -1,1 +1,30 @@
-#include <stdio.h>\n#include <stdlib.h>\n#include <time.h>\n\n/**\n* main - Entry point\n*\n* Return: Always 0 (Success)\n*/\nint main(void)\n{\n\tint n;\n\tint last;\n\n\tsrand(time(0));\n\tn = rand() - RAND_MAX / 2;\n\tlast = n % 10;\n\n\tif(last > 5)\n\t{\n\t\tprintf("Last digit of %d is %d and is greater than 5//n", n, last);\n\t} else if(last == 0)\n\t{\n\t\tprintf("Last digit of %d is %d and is 0\\n", n, last);\n\t} else\n\t{\n\t\tprintf("Last digit of %d is %d and is less than 6 and not 0\\n", n, last);\n\t}\n\treturn (0);\n}
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+
+/**
+* main - Entry point
+*
+* Return: Always 0 (Success)
+*/
+int main(void)
+{
+	int n;
+	int last;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+
+	last = n % 10;
+
+	if ( last > 5)
+	{]n		printf("Last digit of %d is %d and is greater than 5\n", n, last);
+	} else if (last == 0)
+	{
+		printf("Last digit of %d is %d and is 0\n", n, last);
+	} else
+	{
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, last);
+	}
+	return (0);
+}
