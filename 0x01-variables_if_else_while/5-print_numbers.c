@@ -13,8 +13,8 @@ int main(void)
 	{
 		int digit = x % 10;
 
-		printf(\"%d\", digit);
+		printf("%d", digit);
 	}
-	printf(\"\n\");
+	printf("\n");
 	return (0);
 }
