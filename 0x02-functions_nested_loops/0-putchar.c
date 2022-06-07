@@ -13,44 +13,44 @@ int main(void)
 
 	for (i = 1; i <= 8; i++)
 	{
-		char c;
+		char a;
 
 		if (i == 1)
 		{
-			c = '_';
+			a = '_';
 
 		} else if (i == 2)
 		{
-			c = 'p';
+			a = 'p';
 			
 		} else if (i == 3)
 		{
-			c = 'u';
+			a = 'u';
 			
 		} else if (i == 4)
 		{
-			c = 't';
+			a = 't';
 			
 		} else if (i == 5)
 		{
-			c = 'c';
+			a = 'c';
 			
 		} else if (i == 6)
 		{
-			c = 'h';
+			a = 'h';
 			
 		} else if (i == 7)
 		{
-			c = 'a';
+			a = 'a';
 			
 		} else if (i == 8)
 		{
-			c = 'r';
+			a = 'r';
 			
 		} else
 		{
 		}
-		
+		_putchar(a);
 	}
 	write(1, "\n", 1);
 	return (0);
