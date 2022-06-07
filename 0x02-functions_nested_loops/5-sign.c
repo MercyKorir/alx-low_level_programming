@@ -17,7 +17,8 @@ int print_sign(int n)
 		return (r);
 	} else if (n == 0)
 	{
-		 write(2, "00", 1);
+		 r = write(2, "00", 1);
+		 return (r);
 	}
 	else
 	{
