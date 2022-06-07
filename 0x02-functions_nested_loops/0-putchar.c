@@ -44,7 +44,7 @@ int main(void)
 		{
 			c = 'h';
 
-			_putchar(0);
+			_putchar(c);
 		} else if (i == 7)
 		{
 			c = 'a';
