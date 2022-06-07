@@ -16,12 +16,12 @@ int print_sign(int n)
 		return (r);
 	} else if (n == 0)
 	{
-		r = write(1, "0", 1);
+		r = write(1, "00", 1);
 		return (r);
 	} 
 	else
 	{
-		r = write(1, "-1", 2);
+		r = write(1, "-1", 1);
 		return (r);
 	}
 	_putchar('\n');
