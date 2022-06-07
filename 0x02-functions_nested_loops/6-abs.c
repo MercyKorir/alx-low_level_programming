@@ -10,5 +10,6 @@
 int _abs(int c)
 {
 	int abs_c = abs(c);
+
 	return (abs_c);
 }
