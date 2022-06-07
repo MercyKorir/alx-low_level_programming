@@ -19,7 +19,7 @@ int _islower(int c)
 		r = write(1, "1", 1);
 	} else
 	{
-		r = _putchar(r + '0');
+		r = _putchar(islower(c) + '0');
 	}
 	_putchar('\n');
 	return (r);
