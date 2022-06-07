@@ -2,6 +2,12 @@
 #include <ctype.h>
 #include "main.h"
 
+/**
+ * print alphabet - this program prints alphabets in lowercase
+ *
+ * returns the alphabets followed by a new line
+*/
+
 void print_alphabet(void)
 {
 	int lower_x;
