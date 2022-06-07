@@ -13,17 +13,15 @@
 int _islower(int c)
 {
 	int r;
-	int res;
 
 	r = islower(c);
 
 	if (r)
 	{
-		res = write(1, "1", 1);
+		return (1);
 	} else
 	{
-		res = putchar(r + '0');
+		return (0);
 	}
 	_putchar('\n');
-	return (res);
 }
