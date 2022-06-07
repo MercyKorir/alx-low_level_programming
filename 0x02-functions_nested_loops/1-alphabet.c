@@ -4,7 +4,7 @@
 
 /**
  * print_alphabet - this program prints alphabets in lowercase
- * @lower_x: The character to print
+ * void parameter 
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
