@@ -1,4 +1,4 @@
-#include <unistd.h>
+/*#include <unistd.h>*/
 #include <ctype.h>
 
 /**
@@ -8,11 +8,11 @@
 * Return: On success 1.
 * On error, -1 is returned, and errno is set appropriately.
 */ 
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
-
+/*int _putchar(char c)
+*{
+*	return (write(1, &c, 1));
+*}
+*/
 void print_alphabet(void)
 {
 	int lower_x;
@@ -22,7 +22,7 @@ void print_alphabet(void)
 	{
 		lower_x = tolower(x);
 
-		_putchar(lower_x);
+		putchar(lower_x);
 	}
-	_putchar('\n');
+	putchar('\n');
 }
