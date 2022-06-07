@@ -14,6 +14,7 @@ int main(void)
 	for (i = 1; i <= 8; i++)
 	{
 		char a;
+		char result;
 
 		if (i == 1)
 		{
