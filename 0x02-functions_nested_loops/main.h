@@ -22,7 +22,7 @@ void print_alphabet(void)
 	{
 		lower_x = tolower(x);
 
-		putchar(lower_x);
+		_putchar(lower_x);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
