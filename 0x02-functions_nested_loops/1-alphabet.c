@@ -3,9 +3,11 @@
 #include "main.h"
 
 /**
- * print alphabet - this program prints alphabets in lowercase
+ * print_alphabet - this program prints alphabets in lowercase
+ * @lower_x: The character to print
  *
- * returns the alphabets followed by a new line
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
 */
 
 void print_alphabet(void)
