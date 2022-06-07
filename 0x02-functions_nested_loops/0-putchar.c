@@ -19,45 +19,38 @@ int main(void)
 		{
 			c = '_';
 
-			_putchar(c);
 		} else if (i == 2)
 		{
 			c = 'p';
-
-			_putchar(c);
+			
 		} else if (i == 3)
 		{
 			c = 'u';
-
-			_putchar(c);
+			
 		} else if (i == 4)
 		{
 			c = 't';
-
-			_putchar(c);
+			
 		} else if (i == 5)
 		{
 			c = 'c';
-
-			_putchar(c);
+			
 		} else if (i == 6)
 		{
 			c = 'h';
-
-			_putchar(c);
+			
 		} else if (i == 7)
 		{
 			c = 'a';
-
-			_putchar(c);
+			
 		} else if (i == 8)
 		{
 			c = 'r';
-
-			_putchar(c);
+			
 		} else
 		{
 		}
+		_putchar(c);
 	}
 	write(1, "\n", 1);
 	return (0);
