@@ -10,15 +10,16 @@
 int print_sign(int n)
 {
 	int r;
+
 	if (n > 0)
 	{
 		r = write(1, "+1", 1);
 		return (r);
 	} else if (n == 0)
 	{
-		r = write(1, "00", 1);
+		r = write(1, "00", 2);
 		return (r);
-	} 
+	}
 	else
 	{
 		r = write(1, "-1", 1);
