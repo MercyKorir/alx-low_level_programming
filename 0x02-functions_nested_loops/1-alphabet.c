@@ -1,12 +1,18 @@
+#include <stdio.h>
+#include <ctype.h>
 #include "main.h"
 
-/**
-* main - check the code
-*
-* Returns 0.
-*/
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	int lower_x;
+	int x;
+
+	for (x = 'A'; x <= 'Z'; x++)
+	{
+		lower_x = tolower(x);
+
+		putchar(lower_x);
+	}
+	putchar('\n');
 }
+
