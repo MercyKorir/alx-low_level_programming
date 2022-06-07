@@ -11,7 +11,7 @@
 * Return: 0 is otherwise.
 * On error, -1 is returned, and errno is set appropriately.
 */
-int _islower(int c)
+void _islower(int c)
 {
 	int r;
 
