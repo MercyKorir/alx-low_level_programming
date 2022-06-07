@@ -5,8 +5,8 @@
 /**
 * _abs - prints the absolute value for an integer
 * @c: integer to be operated on
-* Return: the value of the absolute value.
-*/ 
+* Return: the absolute value is printed.
+*/
 int _abs(int c)
 {
 	int abs_c = abs(c);
