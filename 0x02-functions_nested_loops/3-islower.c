@@ -18,7 +18,7 @@ int _islower(int c)
 	if (r)
 	{
 		return (1);
-	} 
+	}
 	else
 		return (0);
 
