@@ -5,10 +5,10 @@
 
 /**
 * password_gen - generates password randomly
-* @n: length of password
+* @N: length of password
 * Return: void.
 */
-void password_gen(int n)
+void password_gen(int N)
 {
 	int i;
 	int random;
@@ -18,19 +18,21 @@ void password_gen(int n)
 
 	srand((unsigned int)(time(NULL)));
 
-	char numbers[] = "0123456789";
+	char numbers[];
+	char letter[];
+	char LETTER[];
+	char symbols[];
+	char password[N];
 
-	char letter[] = "abcdefghijklmnopqrstuvwxyz";
+	numbers[] = "123456789";
+	letter[] = "abcdefghijklmnopqrstuvwxyz";
+	LETTER[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	symbols[] = "!@#$^&*?";
 
-	char LETTER[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-	char symbols[] = "!@#$^&*?";
-
-	char password[n];
 
 	random = rand() % 4;
 
-	for (i = 0; i < n; i++)
+	for (i = 0; i < N; i++)
 	{
 		if (random == 1)
 		{
@@ -63,9 +65,11 @@ void password_gen(int n)
 */
 int main(void)
 {
-	int n;
+	int N;
 
-	password_gen(10);
+	N = 10;
+
+	password_gen(N);
 
 	return (0);
 }
