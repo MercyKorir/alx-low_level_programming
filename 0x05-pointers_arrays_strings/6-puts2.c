@@ -13,7 +13,16 @@ void puts2(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		printf("%c", str[i]);
+		if (i == 0)
+		{
+			printf("%c", str[i]);
+		} else if (i % 2 == 0)
+		{
+			printf("%c", str[i]);
+		} else
+		{
+			continue;
+		}
 	}
 	printf("\n");
 }
