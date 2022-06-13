@@ -24,10 +24,10 @@ void password_gen(int N)
 	char symbols[];
 	char password[N];
 
-	numbers[] = "123456789";
-	letter[] = "abcdefghijklmnopqrstuvwxyz";
-	LETTER[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	symbols[] = "!@#$^&*?";
+	numbers[10] = "0123456789";
+	letter[26] = "abcdefghijklmnopqrstuvwxyz";
+	LETTER[26] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	symbols[8] = "!@#$^&*?";
 
 
 	random = rand() % 4;
