@@ -3,10 +3,11 @@
 #include "main.h"
 
 /**
-* _strncat - function that concatenate two string
+* _strncat - function that concatenates two strings
 * @dest: destination string
 * @src: source string
-* Return: The dest string
+* @n: integer to be considered
+* Return: returns dest
 */
 char *_strncat(char *dest, char *src, int n)
 {
@@ -15,3 +16,4 @@ char *_strncat(char *dest, char *src, int n)
 	ptr = strncat(dest, src, n);
 
 	return (ptr);
+}
