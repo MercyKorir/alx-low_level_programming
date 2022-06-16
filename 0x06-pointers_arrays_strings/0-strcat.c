@@ -4,8 +4,8 @@
 
 /**
 * _strcat - this function concatenates two strings
-* @dest - is the destination
-* @src - is the source
+* @dest: is the destination
+* @src: is the source
 * Return: returns the concatenated string.
 */
 char *_strcat(char *dest, char *src)
