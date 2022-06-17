@@ -9,5 +9,6 @@ void reverse_array(int *a, int n);
 char *leet(char *str);
 char *rot13(char *str);
 void print_buffer(char *b, int size);
+char *string_toupper(char *);
 
 #endif
