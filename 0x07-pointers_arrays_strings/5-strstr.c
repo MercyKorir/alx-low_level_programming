@@ -18,6 +18,4 @@ char *_strstr(char *haystack, char *needle)
 	{
 		return (str);
 	}
-	else
-		return (NULL);
 }
