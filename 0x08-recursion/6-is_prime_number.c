@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-* is_primt_number - returns a prime number
+* is_prime_number - returns a prime number
 * @n: integer to be checked
 * Return: returns 1 if prime
 * 0 if not prime
