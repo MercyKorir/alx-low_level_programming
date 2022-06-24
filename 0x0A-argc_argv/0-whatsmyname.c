@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
 * main - is the main function of program
@@ -8,8 +9,8 @@
 */
 int main(int argc, char *argv[])
 {
-	printf(argv[0]);
-	printf("\n");
+	_putchar(argv[0]);
+	_putchar('\n');
 
 	return (0);
 }
