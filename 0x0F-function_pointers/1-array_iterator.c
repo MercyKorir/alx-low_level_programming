@@ -2,7 +2,7 @@
 #include "function_pointers.h"
 
 /**
-* array_iterator - function iterates an array
+* array_iterator - iterates an array
 * @array: array to be iterated
 * @size: size of array
 * @action: callback function
@@ -10,15 +10,13 @@
 */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int i;
-
-	if (action == NULL || array == NULL)
+	if (array == NULL || action == NULL)
 	{
 		return;
 	}
-
-	for (i = 0; i < size; i++)
+	while (size-- > 0)
 	{
-		(*action)(array[i]);
+		action(*array);
+		array++;
 	}
 }
