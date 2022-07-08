@@ -2,21 +2,22 @@
 #include "function_pointers.h"
 
 /**
-* array_iterator - iterates an array
-* @array: array to be iterated
+* array_iterator - function that operates on an array
+* @array: array to be operated on
 * @size: size of array
 * @action: callback function
 * Return: void
 */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	if (array == NULL || action == NULL)
+	int i;
+
+	if (action == NULL || array == NULL)
 	{
 		return;
 	}
-	while (size-- > 0)
+	for (i = 0; i < size; i++)
 	{
-		action(*array);
-		array++;
+		(*action)(array[i]);
 	}
 }
