@@ -1,4 +1,5 @@
 #include "hash_tables.h"
+#include "ctype.h"
 
 /**
  * hash_djb2 - This function implements the djb2 algorithm
@@ -11,7 +12,7 @@ unsigned long int hash_djb2(const unsigned char *str)
 	int c;
 
 	hash = 5381;
-	while ((c = *str))
+	while ((c = *str++))
 	{
 		if (isupper(c))
 		{
