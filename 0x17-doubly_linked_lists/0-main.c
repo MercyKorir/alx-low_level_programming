@@ -5,7 +5,6 @@
 int main(void)
 {
 	dlistint_t *head;
-	int sum;
 
 	head = NULL;
 	add_dnodeint_end(&head, 0);
@@ -14,8 +13,9 @@ int main(void)
 	add_dnodeint_end(&head, 3);
 	add_dnodeint_end(&head, 4);
 	print_dlistint(head);
-	sum = sum_dlistint(head);
-	printf("%d\n", sum);
+	printf("----------\n");
+	insert_dnodeint_at_index(&head, 2, 4096);
+	print_dlistint(head);
 	free_dlistint(head);
 	head = NULL;
 	return (EXIT_SUCCESS);
