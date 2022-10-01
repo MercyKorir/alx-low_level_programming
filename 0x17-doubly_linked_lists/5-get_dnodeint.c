@@ -12,8 +12,14 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	dlistint_t *nth_node = (dlistint_t *)malloc(sizeof(dlistint_t));
 	unsigned int count = 0;
+	unsigned int len;
 
 	if (nth_node == NULL)
+		return (NULL);
+	len = dlistint_len(head);
+	if (index >= len)
+		return (NULL);
+	if (head == NULL)
 		return (NULL);
 	while (head != NULL)
 	{
